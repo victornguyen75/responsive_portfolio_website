@@ -1,5 +1,6 @@
-@import "config"; // Import the variables and mixins
-@import "menu"; // Import menu button
+@import "config"; // Import the variables, mixins, and media queries
+@import "menu"; // Import menu button and overlay
+@import "mobile";
 
 * {
   box-sizing: border-box;

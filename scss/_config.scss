@@ -1,9 +1,11 @@
+// Variables
 $primary-color: #444;
 $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(/dist/img/background.jpg);
 $background-opacity: 0.9;
 
+// Mixins
 @mixin easeOut {
   transition: all 1s ease-out;
 }
@@ -28,5 +30,38 @@ $background-opacity: 0.9;
         background: rgba($primary-color, $background-opacity);
       }
     }
+  }
+}
+
+// Media Query Mixins
+// For small devices (such as smartphones)
+// Range of devices affected: 0px - 500px
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+// For medium devices (such as tablets & small laptops)
+// Range of devices affected: 0px - 768px
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+// For large devices (such as desktops & laptops)
+// Range of devices affected: 769px - 1170px
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+// For extra large devices (such as widescreens)
+// Range of devices affected: 1171px and greater
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
   }
 }
