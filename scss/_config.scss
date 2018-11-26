@@ -33,6 +33,17 @@ $background-opacity: 0.9;
   }
 }
 
+// Set Text Color
+// Checks to make sure that we don't use
+// a color that is too light the text
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
 // Media Query Mixins
 // For small devices (such as smartphones)
 // Range of devices affected: 0px - 500px
