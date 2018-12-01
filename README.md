@@ -6,8 +6,6 @@
 
 This project is my first attempt to create a responsive web application that can host my work and project portfolio.
 
-[Here it is on heroku!](https://responsive-portfolio-website.herokuapp.com/ "My Modern-looking Responsive Portfolio Website")
-
 I learned how to:
 
 - Create a web application from HTML, CSS, and Javascript without any frameworks or bootstrap
