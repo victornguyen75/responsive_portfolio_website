@@ -4,7 +4,9 @@
 
 **This is a fork of bradtraversy's master branch.**
 
-This project is my first attempt to create a responsive web application that can host my work and project portfolio.
+This project is my first attempt to create a responsive web application that can host my work and project portfolio. As a prototype, this website does not truly reperesent my full work, and I'm using this as a template for the future.
+
+[Github Pages Deployment](https://victornguyen75.github.io/responsive_portfolio_website/ "My Portfolio Website")
 
 I learned how to:
 
