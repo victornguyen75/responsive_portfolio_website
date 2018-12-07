@@ -1,17 +1,45 @@
 // New media queries
 @include for-phone-only {
+  main#home h1 {
+    margin-top: 10vh;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
 }
 @include for-tablet-portrait-up {
+  .projects {
+    grid-template-columns: 1fr;
+  }
 }
 @include for-tablet-portait-only {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @include for-tablet-landscape-up {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @include for-tablet-landscape-only {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @include for-desktop-up {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 @include for-desktop-only {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 @include for-big-desktop-up {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
