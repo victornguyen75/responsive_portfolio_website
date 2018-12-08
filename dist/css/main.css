@@ -238,48 +238,58 @@ main {
   color: #fff;
   height: 60px; }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 599px) {
   main#home h1 {
-    margin-top: 10vh; }
-  .projects {
-    grid-template-columns: 1fr; } }
-
-@media screen and (max-width: 768px) {
+    margin-top: 25vh;
+    font-size: 3.5rem; }
   main {
-    align-items: center;
     text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show,
-    div.menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-  .portrait {
-    background: url("/dist/img/victor-250x250.jpg");
-    width: 150px;
-    height: 150px; }
+  main .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-size: 2.3rem; }
+  .menu .nav-link {
+    font-size: 20px; }
+  .menu-branding .portrait {
+    background: url("/dist/img/victor-for-phone-only.jpg");
+    width: 130px;
+    height: 130px; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
+    grid-template-columns: 1fr; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    font-size: 1rem; }
+  .boxes div {
+    font-size: 1rem; } }
+
+@media (min-width: 600px) {
+  .projects {
+    grid-template-columns: 1fr; } }
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
-@media screen and (min-width: 769px) and (max-width: 1170px) {
+@media (min-width: 900px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
 
-@media screen and (min-width: 1171px) {
+@media (min-width: 900px) and (max-width: 1199px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media (min-width: 1200px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media (min-width: 1800px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
